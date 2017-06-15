@@ -12,6 +12,10 @@ class SearchBar extends Component {
     this.props.onSearchTermChange(term);
   }
 
+  function(e) {
+    this.onInputChange(e.target.value);
+  }
+
   render() {
     return(
     <div className="search-bar">
